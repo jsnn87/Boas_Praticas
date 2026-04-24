@@ -1,0 +1,39 @@
+name: boapraticas
+description: "Módulo de Boas Práticas Corp - Grupo Dass." # Identidade atualizada
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.3.0 # Compatível com Dart 3.x+ conforme diretrizes[cite: 1]
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Essencial para navegação via URL no navegador
+  flutter_web_plugins:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.1 # Gerenciamento de estado obrigatório
+  http: ^1.2.0     # Camada de rede REST[cite: 1]
+  web_socket_channel: ^3.0.0 # Real-time via WebSockets[cite: 1]
+  image_picker: ^1.0.0
+  shared_preferences: ^2.2.2 # Persistência de login e abas
+  flutter_colorpicker: ^1.1.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0 # Padronização de código Dart
+
+flutter:
+  uses-material-design: true
+
+  # Caso utilize assets locais (fotos de perfil padrão, logos), declare-os abaixo:
+  # assets:
+  #   - assets/images/
